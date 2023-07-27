@@ -1,0 +1,25 @@
+/*
+body
+
+Markup:
+<div class="test">
+	<h1>Test</h1>
+	<p>Test</p>
+</div>
+
+Styleguide body
+*/
+.test{
+	background: skyblue;
+	border: 2px solid rebeccapurple;
+	color: saddlebrown;
+	margin: 1rem;
+	padding: .5em;
+}
+
+
+.block__element--modifier{
+	background: #fdf;
+	border: 2px solid rebeccapurple;
+	color: saddlebrown;
+}

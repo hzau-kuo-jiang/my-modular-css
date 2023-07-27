@@ -1,0 +1,21 @@
+{
+  "name": "my-modular-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kss": "kss --config kss-config.json",
+    "sass": "sass --watch scss/main.scss dist/css/main.css",
+    "watch-css": "onchange \"dist/css/main.css\" -- npm run kss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kss": "^3.1.0",
+    "sass": "^1.64.1",
+    "onchange": "^7.1.0",
+    "prettier": "^3.0.0"
+  }
+}
