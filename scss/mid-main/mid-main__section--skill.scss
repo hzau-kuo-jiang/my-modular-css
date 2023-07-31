@@ -1,0 +1,25 @@
+.mid-main__section--skill {
+  background-color: $dark-color;
+  color: set-text-color($dark-color);
+}
+
+.mid-main__section--skill-list {
+  h4 {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+}
+
+.mid-main__section--skill-progress {
+  background-color: $mid-color;
+  border-radius: 0.25em;
+  height: 1em;
+  margin-bottom: 0.5em;
+  width: 100%;
+
+  > div {
+    background-color: $primary-color;
+    border-radius: inherit;
+    height: 100%;
+  }
+}

@@ -1,0 +1,85 @@
+@import "../variables";
+
+.mid-main__section--grid {
+  .article-container {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.5em;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .grid-article {
+    background-color: $light-color;
+    border-left: 2px solid $primary-color;
+    grid-column: span 2;
+
+    p {
+      border: none;
+    }
+  }
+  
+  .article-container--from{
+    display: block;
+    
+    
+    form{
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 2em;
+    }
+    
+    input,
+    textarea{
+      padding: 1em;
+    }
+    
+    textarea{
+      grid-column: span 2;
+      height: 10em;
+    }
+    
+  }
+  
+}
+
+.mid-main__project-container {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    background-color: $primary-color;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    transform: rotate(45deg) scale(2) translateX(-100%);
+    transition: transform 0.5s ease;
+    width: 100%;
+  }
+  
+  &:hover::before {
+    transform: rotate(45deg) scale(2) translateX(0);
+  }
+
+  section {
+    color: $light-color;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -300%);
+    transition: all 0.5s ease 0.2s;
+  }
+  
+  &:hover section {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

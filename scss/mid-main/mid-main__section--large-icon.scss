@@ -1,0 +1,32 @@
+.mid-main__section--large-icon {
+  .fas {
+    background-color: $dark-color;
+    border-radius: 50%;
+    color: set-text-color($dark-color);
+    font-size: 2.5rem;
+    line-height: 2em;
+    margin-bottom: 0.2em;
+    position: relative;
+    transition: all 0.5s ease;
+    width: 2em;
+
+    &:hover {
+      background-color: $primary-color;
+      transform: scale(1.1);
+
+      sup {
+        background-color: $dark-color;
+      }
+    }
+  }
+
+  sup {
+    background-color: $primary-color;
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 2em;
+    position: absolute;
+    transition: all 0.5s ease;
+    width: 2em;
+  }
+}

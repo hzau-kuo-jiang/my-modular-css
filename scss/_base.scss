@@ -1,0 +1,50 @@
+@import "variables";
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(0.6em + 1vw);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 0.3em;
+  position: relative;
+}
+
+h2::after {
+  background: $primary-color;
+  bottom: -0.1em;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 2em;
+}

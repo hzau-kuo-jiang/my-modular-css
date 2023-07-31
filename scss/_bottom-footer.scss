@@ -1,0 +1,32 @@
+@import "variables";
+@import "functions";
+
+footer {
+  background-color: $dark-color;
+  color: set-text-color($dark-color);
+  padding: 1em ;
+
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 1em;
+  }
+
+  .fab {
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    line-height: 2.2em;
+    text-align: center;
+    width: 2.2em;
+  }
+}

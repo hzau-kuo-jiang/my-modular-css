@@ -1,0 +1,27 @@
+@import "../variables";
+
+.top-header--home{
+  background-position: center center;
+  border-bottom: none;
+}
+
+.top-header--home__slogan {
+  flex: 1;
+  margin-top: 10em;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    margin-top: 1.5em;
+  }
+}
+
+.top-header--home__inner {
+  flex-direction: column;
+  height: 100vh;
+}

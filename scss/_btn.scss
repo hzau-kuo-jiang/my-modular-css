@@ -1,0 +1,26 @@
+@import "variables";
+@import "functions";
+
+.btn {
+  background: $light-color;
+  border: none;
+  color: set-text-color($light-color);
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+  }
+}
+
+.btn--dark {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+
+  &:hover {
+    background: $mid-color;
+    color: set-text-color($mid-color);
+  }
+}

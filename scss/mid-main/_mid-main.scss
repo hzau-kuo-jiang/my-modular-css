@@ -1,0 +1,9 @@
+@import "../variables";
+@import "../functions";
+
+.mid-main {
+  text-align: center;
+}
+
+@import "mid-main__section";
+@import "mid-main__nav";
